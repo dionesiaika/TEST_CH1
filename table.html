@@ -165,6 +165,81 @@
         <p>Kau</p>
         <!-- Atribut id Links -->
         <!-- Ini Links -->
+        <h2>Adding Form</h2>
+        <form action="" method="post">
+            <label for="name">Nama</label>
+            <input id="name" type="text">
+            <br/>
+            <label for="password">Password</label>
+            <input type="password" required>
+            <br/>
+            <input type="checkbox">
+            <br/>
+            <input type="radio">
+            <br/>
+            <input type="number" min="1" max="10">
+            <br/>
+            <textarea rows="8" cols="64">Ketik disini</textarea>
+            <br/>
+            <input type="submit" value="OK">
+            <br/>
+            <p><b>OR</b></p>
+            <label for="name">Name</label>
+            <input name="name" type="text">
+            <br>
+            <label for="password">Password</label>
+            <input name="password" type="password">
+        </form>
+        <!-- Perbedaan OR di form name dan password -->
+        <!-- radio button utk pilih 1 dri banyak, checkbox bisa pilih banyak -->
+        <!-- Ini Form -->
+        <br>
+        <h2>Adding Button</h2>
+            <button type="button">
+            OK
+            </button>
+            <button type="button" onclick="doSomething();">
+            Apply
+            </button>
+        <!-- onclick isinya adl function Javascript yg akan dieksekusi kalo button di klik: eksekusi function JS 'doSomething' -->
+        <!-- Ini Button -->
+        <br>
+        <h2>Adding Select (Option) Forms</h2>
+        <p>Apa warna favoritmu?</p>
+        <select>
+            <option>Merah</option>
+            <option>Kuning</option>
+            <option>Hijau</option>
+            <option>Biru</option>
+        </select>
+        <br>
+        <p>Apa makanan favoritmu?</p>
+        <select>
+            <option>Papeda</option>
+            <option>Soto Kwali</option>
+            <option>Sate Padang</option>
+            <option selected>Gudeg</option>
+        </select>
+        <!-- list values yg  utk memilih 1 dri banyak -->
+        <!-- ada tag 'select' di parent nya, di child? nya ada tag 'option' -->
+        <!-- Ini Selected Forms -->
+        <br>
+        <h2>Adding Option Groups</h2>
+        <p>Minuman favoritmu?</p>
+        <select>
+            <optgroup label="Jus Buah">
+                <option>Jus Apel</option>
+                <option>Jus Jeruk</option>
+                <option>Jus Mangga</option>
+            </optgroup>
+            <optgroup label="Jamu">
+                <option>Kencur</option>
+                <option>Asem</option>
+                <option>Brotowali</option>
+            </optgroup>
+        </select>
+        <!-- optgroup adl child dri 'select', di optgroup ada child 'option', 'label' adl title dri optgroup -->
+        <!-- utk mengelompokkan msg2 ke dlm bbrp group= optgroup -->
         <br>
     </body>
 </html>
