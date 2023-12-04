@@ -240,6 +240,90 @@
         </select>
         <!-- optgroup adl child dri 'select', di optgroup ada child 'option', 'label' adl title dri optgroup -->
         <!-- utk mengelompokkan msg2 ke dlm bbrp group= optgroup -->
+        <!-- Ini Optgroup -->
         <br>
+        <h2>Adding Radio Button</h2>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label fro="html">HTML</label>
+        <br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label>
+        <br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        <!-- utk milih 1 dri banyak -->
+        <!-- kalo pilihannya banyak banget >5, pakai select option; kalo <=5, pakai radio button -->
+        <!-- yg ditampilin adl 'label', 'value' utk kalo udah dikonekkin ke auto? API trus di proses di backend/datanya sendiri -->
+        <!-- Ini Radio Button -->
+        <br>
+        <h2>Adding Field Sets & Legend</h2>
+        <fieldset>
+            <legend>Data Diri</legend>
+            <p>
+                <label for="nama">Nama</label>
+                <input type="text" name="nama">
+            <p>
+                <label for="usia">Usia</label>
+                <input type="number" name="usia">
+        </fieldset>
+        <!-- 'field set' itu parent nya, tag nya pake 'legend', childnya ada label 'nama' dan 'usia' -->
+        <!-- fungsinya mirip sama kyk optgroup utk mengelompokkan bag2 form ke dlm bbrp kelompok2 yg lebih kecil lagi -->
+        <!-- Ini Field Sets & Legend -->
+        <br>
+        <h2>HTML Semantic</h2>
+            <b>Ini tulisan bold</b><br>
+            <strong>Ini tulisan bold juga, tapi pake strong</strong>
+        <br>
+        <br>
+            <i>Ini tulisan italic</i><br>
+            <em>Ini tulisan italic juga, tapi pake em</em>
+        <!-- strong level importance-nya lebih kuat/ditekankan dibanding bold, scr SEO lebih ditonjolin yg strong dibanding bold; utk screen reader disability juga dibaca lebih kuat/intonasii beda -->
+        <!-- em utk penekanan, i utk julukan/istilah dri bhs asing; jgn pake strong/em kalo cuma pengen menebalkan/memiringkan tulisan -->
+        <!-- Ini HTML Semantic bold & italic -->
+        <h2>Adding Division Tag (see on head, title, and body)</h2>
+        <div>Division 1</div>
+        <div>Division 2</div>
+        <div>Division 3</div>
+        <!-- Div mirip kayak p cuma nambah baris baru, ga nambah styling apa2, & gada makna semantic apa2 -->
+        <!-- Div utk mendeskripsikan bag/divisi tertentu yg sifatnya fleksibel -->
+        <br>
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <span>Span 3</span>
+        <p>Namaku <span>Mr. X</span>
+        <!-- Span tipenya in-mind/dlm 1 baris yg sama; kalo div sifatnya 1 block dri atas ke bawah -->
+        <!-- Div = elemen tinkat blok, span = elemen sebaris, utk menandai bag dri teks/dokumen, mudah ditata o/ CSS/dimanipulasi dg JavaScript dg atribut class/id-->
+        <!-- Ini Division & Span -->
+        <br>
+        <h2>Adding Main, Headers, and Footers</h2>
+        <p><b><i>(pakai tag)</i></b></p>
+            <article>
+                <header>
+                    <h1>Header Artikel</h1>
+                    <p>Selamat datang!</p>
+                </header>
+                <main>
+                    <p>Ini konten utama.</p>
+                </main>
+                <footer>
+                    <p>Bye!</p>
+                </footer>
+            </article>
+        <p><b><i>(pakai class)</i></b></p>
+            <article>
+                <section class="header">
+                    <h1>Header Artikel</h1>
+                    <p>Selamat datang!</p>
+                </section>
+                <section class="main">
+                    <p>Ini konten utama.</p>
+                </section>
+                <section class="footer">
+                    <p>Bye!</p>
+                </section>
+            </article>
+    <!-- Lebih baik pake yg 'tag' soalnya semantic lebih baik, scr SEO dibaca lebih baik, sama screen reader juga lebih bisa dimengerti -->
+    <!-- Cara menemukan mana semantic yg bener kyk gimana = butuh jam terbang yg sgt tinggi krn mrpkn salah satu part yg paling susah di HTML & CSS -->
+    <!-- Ini Main, Headers, and Footers -->
     </body>
 </html>
